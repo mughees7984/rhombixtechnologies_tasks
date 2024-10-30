@@ -1,0 +1,109 @@
+/* Reset some default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basic styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+/* Container styling */
+.container {
+    width: 100%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Centering and spacing for the header */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the form */
+#add-task-form {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+/* Styling for the input field */
+#task-input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+/* Styling for the Add Task button */
+#add-task-btn {
+    padding: 10px 20px;
+    margin-left: 10px;
+    border: none;
+    background: #28a745;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+#add-task-btn:hover {
+    background: #218838;
+}
+
+/* Styling for the task list */
+#task-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+/* Styling for individual tasks */
+.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+/* Styling for completed tasks */
+.task.completed span {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Styling for task action buttons */
+.task button {
+    margin-left: 10px;
+    border: none;
+    background: #dc3545;
+    color: #fff;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.task button.edit-btn {
+    background: #ffc107;
+    color: #000;
+}
+
+.task button.complete-btn {
+    background: #28a745;
+}
+
+/* Hover effects for action buttons */
+.task button:hover {
+    opacity: 0.8;
+}
